@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="./columnize.js"></script>
+	<style>
+		td{
+		  vertical-align:top;
+		}
+		.column-wrapper{
+		  width:100px;
+		}
+		.column-wrapper td{
+		  padding:5px 10px;
+		  white-space: nowrap;
+		  font-weight:bold;
+		  text-transform:capitalize;
+		}
+	</style>
+</head>
+<body>
+<div class="column-wrapper">
+
+</div>
+<script>
+var dataq = ['<input type="checkbox"><label>data1</label>', '<input type="checkbox"><label>data2</label>', '<input type="checkbox"><label>data3</label>', '<input type="checkbox"><label>data4</label>', 'data5', 'daaaaaaaaataa6</label>', 'data7', 'data8', 'data9', 'data10', 'data11', 'data12', 'data13'];
+$(function(){
+	$(".column-wrapper").columnize({
+	  columnheight: 4,
+	  data : dataq
+	});	
+})
+
+</script>
+</body>
+</html>
